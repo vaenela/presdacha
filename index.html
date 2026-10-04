@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Интернет-магазин электроники</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- КТ-4 - БЭМ: БЛОК header
+         header__container, header__logo, header__search, header__nav
+         являются элементами блока header.-->
+    <header class="header">
+        <div class="header__container">
+            <a href="#" class="header__logo">
+                <img src="assets/logo.png" alt="logo" class="header__logo-img">
+            </a>
+
+            <div class="header__search">
+                <input type="text" class="header__search-input" placeholder="Поиск...">
+                <button class="header__search-button">Поиск</button>
+            </div>
+
+            <nav class="header__nav">
+                <a href="#" class="header__nav-link">
+                    <img src="assets/fav.png" alt="Избранное">
+                </a>
+                <a href="#" class="header__nav-link header__nav-link--cart">
+                    <img src="assets/cart.png" alt="Корзина">
+                    <!-- КТ-4 БЭМ: --cart — модификатор элемента nav-link. -->
+                    <span class="header__cart-count">0</span>
+                </a>
+            </nav>
+
+            <button class="header__burger" aria-label="Меню">
+                <span class="header__burger-line"></span>
+                <span class="header__burger-line"></span>
+                <span class="header__burger-line"></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- КТ-4 БЭМ: блок catalog и его элементы. -->
+    <main class="main">
+        <section class="catalog">
+            <h1 class="catalog__title">Каталог электроники</h1>
+            <div class="catalog__grid"></div>
+        </section>
+    </main>
+
+    <!-- КТ-4 БЭМ: отдельный блок footer, не зависящий от header/catalog. -->
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__column footer__column--about">
+                <img src="assets/logo-white.png" alt="logo" class="footer__logo">
+                <p class="footer__text">Интернет-магазин современной электроники.</p>
+            </div>
+
+            <div class="footer__column">
+                <p class="footer__title">Сервисы</p>
+                <ul class="footer__links">
+                    <li><a href="#" class="footer__link">Бонусная программа</a></li>
+                    <li><a href="#" class="footer__link">Подарочные карты</a></li>
+                    <li><a href="#" class="footer__link">Оплата</a></li>
+                    <li><a href="#" class="footer__link">Гарантия</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__column">
+                <p class="footer__title">Помощь покупателю</p>
+                <ul class="footer__links">
+                    <li><a href="#" class="footer__link">Найти заказ</a></li>
+                    <li><a href="#" class="footer__link">Доставка</a></li>
+                    <li><a href="#" class="footer__link">Возврат товара</a></li>
+                    <li><a href="#" class="footer__link">Частые вопросы</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer__social">
+            <img src="assets/Social Icons.png" alt="Социальные сети">
+        </div>
+    </footer>
+
+    <script src="dist/shop.js" defer></script>
+</body>
+</html>

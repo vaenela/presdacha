@@ -1,0 +1,6 @@
+{
+  "name": "kt2-3-4-electronics-store",
+  "version": "1.0.0",
+  "description": "Объединённый проект КТ-2 (ООП), КТ-3 (SOLID) и КТ-4 (БЭМ)",
+  "scripts": { "build": "tsc" }
+}
